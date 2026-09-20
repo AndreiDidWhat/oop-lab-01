@@ -1,8 +1,8 @@
 package strategies;
 
-public class SwimmingStrategy  implements MovementStrategy {
+public class SwimmingStrategy implements MovementStrategy {
     @Override
     public void move() {
-        System.out.println("Герой плывёт");
+        System.out.println("Герой плывет");
     }
 }

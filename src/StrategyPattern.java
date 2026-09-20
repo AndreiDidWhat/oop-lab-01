@@ -1,4 +1,5 @@
 import strategies.*;
+
 import java.util.Scanner;
 
 public class StrategyPattern {
@@ -10,7 +11,7 @@ public class StrategyPattern {
 
         while (!exit) {
             printMenu();
-            System.out.print("Ваш выбор: ");
+            System.out.println("Ваш выбор: ");
             String choice = scanner.nextLine();
 
             switch (choice) {
@@ -28,12 +29,13 @@ public class StrategyPattern {
                     break;
                 case "5":
                     exit = true;
-                    System.out.println("Выход из программы...");
+                    System.out.println("Выход из программы");
                     continue;
                 default:
                     System.out.println("Ошибка ввода");
                     continue;
             }
+
             hero.move();
         }
         scanner.close();

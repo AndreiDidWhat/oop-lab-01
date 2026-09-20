@@ -1,8 +1,8 @@
 package strategies;
 
-public class WalkingStrategy  implements MovementStrategy {
+public class WalkingStrategy implements MovementStrategy {
     @Override
     public void move() {
-        System.out.println("Герой идёт пешком");
+        System.out.println("Герой идет пешком");
     }
 }
